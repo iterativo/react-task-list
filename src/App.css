@@ -1,0 +1,90 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+input, textarea, button {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    width: 300px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button {
+    width: 100px;
+}
+
+input[type="submit"], button {
+    cursor: pointer;
+    background: #fff;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form label {
+    text-align:right;
+    padding-top: 10px;
+}
+
+form label.required:after {
+    content: "*";
+}
+
+.app {
+    padding: 2.5%;
+    overflow: scroll;
+}
+
+.task-list, .task-form {
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.task-form {
+    position: fixed;
+    width: 46%;
+    left: 51%;
+    top: 5%;
+}
+
+.task-list {
+    width: 50%;
+    overflow: auto;
+}
+
+.task {
+    background: #eee;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task > div {
+    margin-bottom: 5px;
+}
+
+.task > .actions > button {
+    margin-right: 10px;
+}
+
+#task-id {
+    display: none;
+}
